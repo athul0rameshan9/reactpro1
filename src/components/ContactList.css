@@ -1,29 +1,102 @@
-/* ContactList.css */
+.contact-list {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .table-auto {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th,
-  td {
-    border: 1px solid #ccc;
-    padding: 8px;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  
-  .cursor-pointer {
-    cursor: pointer;
-  }
-  
-  .hover:hover {
-    background-color: #f5f5f5;
-  }
+.add-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  background-color: #21ba45;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #16ab39;
+  transform: translateY(-2px);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.contact-header input,
+.contact-content div input {
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-header input:focus,
+.contact-content div input:focus {
+  border-color: #2185d0;
+  box-shadow: 0 0 5px rgba(33, 133, 208, 0.5);
+}
+
+.trash.icon {
+  color: red;
+  cursor: pointer;
+  margin-left: auto; /* Pushes the delete icon to the rightmost end */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.trash.icon:hover {
+  color: darkred;
+  transform: scale(1.1);
+}
+
+.save-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #2185d0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #1678c2;
+  transform: translateY(-2px);
+}
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
